@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.flex-container{
+    /* Now a flex container! */
+    
+    display:flex; 
+    background-color:#f4f4f4;
+    /* Use below on flex container */
+    /* Jusitify Content works on the MAIN ( horizontal axis ) -----> */
+    /* --------------------------------------- */
+    /* Use align-items to align VERTICALLY (cross axis) */
+
+    /* flex:wrap; <-- will wrap content to the next line  */
+
+
+}
+
+.item{
+    /* width: 100px; */
+    /* sets the width for the flex items */
+/* flex grow takes up the entire width of the space. starts with base of 100px (flex-basis)*/
+
+ /* Shorthand prop for flex (flex-grow, flex-shrink, flex-basis */
+flex: 1 0;
+    height: 100px;
+    background: #254de4;
+    margin:10px;
+    color:#fff;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+    .item:nth-of-type(1){
+     /* order:2; */ 
+    
+       
+    }
+    
+    .item:nth-of-type(2){
+        /* order: 1; */
+       
+    
+    }
+        
+    .item:nth-of-type(3){
+        /* order:3; */
+        /* flex-grow: 1; */
+       
+    }
